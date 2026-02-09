@@ -6,5 +6,6 @@ export default function onBeforePrerenderStart() {
     .filter((category) => category.id !== 'all')
     .map((category) => `/category/${category.id}`);
 
-  return ['/', ...articleUrls, ...categoryUrls];
+  // Don't include '/' here: Vike already prerenders filesystem routes such as /pages/+Page.tsx.
+  return [...articleUrls, ...categoryUrls];
 }
