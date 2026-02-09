@@ -5,7 +5,7 @@ const root = process.cwd();
 const publicDir = path.join(root, 'public');
 if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
 
-const siteUrl = process.env.SITE_URL || 'http://localhost:3000';
+const siteUrl = process.env.SITE_URL || 'https://aibehivrit.vercel.app';
 
 const articlesDir = path.join(root, 'data', 'articles');
 const categoriesSource = fs.readFileSync(path.join(root, 'data', 'content.tsx'), 'utf8');
