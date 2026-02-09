@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI EduBlog IL</title>
+    <link>http://localhost:3000</link>
+    <description>מדריכים ותובנות על בינה מלאכותית</description>
+    <item>
+      <title><![CDATA[ג\]]></title>
+      <link>http://localhost:3000/blog/ביקורת-גוגל-גמיני-advanced</link>
+      <guid>http://localhost:3000/blog/ביקורת-גוגל-גמיני-advanced</guid>
+      <description><![CDATA[אחרי התחלה צולעת ב-2024, גוגל חזרה למשחק ובגדול. מודל ה-Gemini 3 Pro החדש מציע זיכרון כמעט אינסופי ויכולות "סוכן" (Agent) שמבצעות פעולות במקומכם. בדקנו.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[GPT-5.2 או Claude 4.6: מי המלך של 2026? (השוואת עומק)]]></title>
+      <link>http://localhost:3000/blog/chatgpt-5-vs-claude-4-6-comparison</link>
+      <guid>http://localhost:3000/blog/chatgpt-5-vs-claude-4-6-comparison</guid>
+      <description><![CDATA[זו כבר לא השוואה בין "בוטים". זו מלחמה בין פילוסופיות. האם אתם צריכים את "מנוע ההיגיון" של OpenAI או את "הסופר האנושי" של Anthropic? התוצאות מפתיעות.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[המהפכה של Cursor ב-2026: המדריך השלם לתכנות ב-AI (Vibe Coding)]]></title>
+      <link>http://localhost:3000/blog/cursor-ai-coding-guide-2026-vibe-coding</link>
+      <guid>http://localhost:3000/blog/cursor-ai-coding-guide-2026-vibe-coding</guid>
+      <description><![CDATA[זה לא "עוד תוסף". זהו שינוי פרדיגמה מוחלט. מדריך עומק שילמד אתכם איך להפוך ממתכנתים ל"ארכיטקטים של תוכנה". כולל הסברים על ה-Composer החדש ומודלים של חשיבה.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[לנצח את SearchGPT: איך כותבים תוכן ל-SEO ב-2026]]></title>
+      <link>http://localhost:3000/blog/קידום-אתרים-כתיבה-ai</link>
+      <guid>http://localhost:3000/blog/קידום-אתרים-כתיבה-ai</guid>
+      <description><![CDATA[פעם המטרה הייתה להגיע למקום ראשון בגוגל. היום, כשגוגל עונה לגולש ישירות בלי לשלוח אותו לאתר, המשחק השתנה. כך תכתבו תוכן שה-AI ירצה לצטט.]]></description>
+      <pubDate>Thu, 30 Apr 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[מה זה Vibe Coding? (ולמה ב-2026 זה הסטנדרט החדש)]]></title>
+      <link>http://localhost:3000/blog/what-is-vibe-coding</link>
+      <guid>http://localhost:3000/blog/what-is-vibe-coding</guid>
+      <description><![CDATA[פעם, כדי לבנות אפליקציה, הייתם צריכים ללמוד מדעי המחשב 4 שנים. היום? אתם צריכים לדעת להסביר מה אתם רוצים, ולתת ל-AI לשבור את הראש. ברוכים הבאים לעידן ה-Vibe Coding.]]></description>
+      <pubDate>Sun, 31 May 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[מהפכת הוידאו 2026: המדריך השלם ל-Sora, Veo ו-Kling]]></title>
+      <link>http://localhost:3000/blog/ai-video-generators-comparison-2026</link>
+      <guid>http://localhost:3000/blog/ai-video-generators-comparison-2026</guid>
+      <description><![CDATA[זה לא עוד מאמר על "איך לעשות סרטון". זהו ניתוח עומק של מהנדס AI על הכלים ששינו את הוליווד. השוואת איכות, עלויות, וזרימת עבודה (Workflow) ליצירת סרטים ברמה קולנועית מהבית.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[המקצועות שייעלמו עד 2030 (תחזית מעודכנת לפברואר 2026)]]></title>
+      <link>http://localhost:3000/blog/jobs-disappearing-2030-future-work</link>
+      <guid>http://localhost:3000/blog/jobs-disappearing-2030-future-work</guid>
+      <description><![CDATA[התחזיות הישנות התנפצו. הבינה המלאכותית לא לוקחת את העבודות הפיזיות, היא לוקחת את המשרות המשרדיות. מי בטוח, מי בצרות ומה כדאי ללמוד עכשיו?]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[האם ה-AI מסוכן? (רמז: הבעיה היא לא רובוטים עם לייזרים)]]></title>
+      <link>http://localhost:3000/blog/is-ai-dangerous-safety-risks</link>
+      <guid>http://localhost:3000/blog/is-ai-dangerous-safety-risks</guid>
+      <description><![CDATA[בסרטים המחשב תמיד מחליט להשמיד את האנושות. במציאות? הבעיות קצת יותר ארציות וקשורות לארנק ולפרטיות שלכם. הנה מה שבאמת צריך להדאיג אתכם.]]></description>
+      <pubDate>Sat, 28 Feb 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[פרודוקטיביות עם AI: המדריך לעצלנים חכמים שרוצים לחסוך 10 שעות בשבוע]]></title>
+      <link>http://localhost:3000/blog/save-time-with-ai-productivity</link>
+      <guid>http://localhost:3000/blog/save-time-with-ai-productivity</guid>
+      <description><![CDATA[אני לא אוהב לעבוד קשה. ואני מניח שגם אתם לא. אז אספתי את השיטות הכי תכלסיות לחיסכון בזמן (Time Saving) ולניהול משימות אוטומטי בעזרת הרובוט האישי שלכם.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[טכניקת הפרסונה: איך לגרום ל-ChatGPT להפוך למומחה עולמי (הנדסת פרומפט)]]></title>
+      <link>http://localhost:3000/blog/persona-prompt-engineering-guide</link>
+      <guid>http://localhost:3000/blog/persona-prompt-engineering-guide</guid>
+      <description><![CDATA[הסוד הגדול של המקצוענים בתחום הנדסת הפרומפט (Prompt Engineering) הוא לא ידע טכני מסובך. זה משפט אחד קטן שמוסיפים בהתחלה והופך את ה-AI מרובוט יבש למומחה עולמי.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[שרשרת מחשבה (Chain of Thought): השיטה שתמנע מה-AI לעשות פדיחות]]></title>
+      <link>http://localhost:3000/blog/chain-of-thought-prompting</link>
+      <guid>http://localhost:3000/blog/chain-of-thought-prompting</guid>
+      <description><![CDATA[טכניקת "שרשרת המחשבה" (Chain of Thought) היא שם מפוצץ לטריק פשוט: להכריח את המודל להראות את הדרך, כמו בשיעור חשבון. הנה איך זה עובד.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[איך ChatGPT באמת עובד? (הסבר בגובה העיניים - מודל 2026)]]></title>
+      <link>http://localhost:3000/blog/how-chatgpt-works-simple</link>
+      <guid>http://localhost:3000/blog/how-chatgpt-works-simple</guid>
+      <description><![CDATA[עד לא מזמן אמרו לנו ש-AI הוא רק "תוכי סטטיסטי". ב-2026 זה השתנה. המודלים החדשים פיתחו יכולת "חשיבה" (Reasoning). הנה ההסבר החדש לאיך הקסם קורה.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[אוטומציה 2.0: איך מקימים צוות עובדים דיגיטלי (Agents) ב-2026]]></title>
+      <link>http://localhost:3000/blog/ai-automation-guide-business</link>
+      <guid>http://localhost:3000/blog/ai-automation-guide-business</guid>
+      <description><![CDATA[פעם בנינו אוטומציות של "אם-אז" (If This Then That). היום אנחנו נותנים ל-AI מטרה ("תנהל את הלידים") והוא מחליט לבד אילו פעולות לבצע. ברוכים הבאים לעידן הסוכנים.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[איך לתכנן את הטיול הבא שלכם עם AI (גרסת 2026)]]></title>
+      <link>http://localhost:3000/blog/תכנון-טיול-בחול-ai</link>
+      <guid>http://localhost:3000/blog/תכנון-טיול-בחול-ai</guid>
+      <description><![CDATA[שכחו מלחפש שעות בבלוגים. הכלים החדשים של 2026 יודעים לבדוק זמינות מלונות, לבנות מסלול על גבי מפה חיה, ולהתחשב במזג האוויר הצפוי.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[להיות מפיק מוזיקלי מהספה: המדריך ל-Suno ו-Udio ב-2026]]></title>
+      <link>http://localhost:3000/blog/יצירת-שירים-ai-suno</link>
+      <guid>http://localhost:3000/blog/יצירת-שירים-ai-suno</guid>
+      <description><![CDATA[זה כבר לא גימיק של 30 שניות. הכלים החדשים יוצרים שירים מלאים, עם פתיחה, פזמון, גשר וסיום, באיכות אולפן. איך יוצרים שיר ליום הולדת (או לספוטיפיי) בחינם.]]></description>
+      <pubDate>Thu, 30 Apr 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[AI לסטודנטים ב-2026: איך לשרוד את התואר החדש]]></title>
+      <link>http://localhost:3000/blog/בינה-מלאכותית-לסטודנטים-אקדמיה</link>
+      <guid>http://localhost:3000/blog/בינה-מלאכותית-לסטודנטים-אקדמיה</guid>
+      <description><![CDATA[המשחק השתנה. ב-2026 אף מרצה לא מאמין ל"גלאי AI" (כי הם לא עובדים), ולכן דרכי ההערכה השתנו. המדריך לשימוש ב-AI כעוזר מחקר לגיטימי ולא כמכונת העתקה.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[המדריך המעודכן לפרטיות (2026): האם אפשר לסמוך על ה-AI במכשיר?]]></title>
+      <link>http://localhost:3000/blog/מדריך-פרטיות-ai</link>
+      <guid>http://localhost:3000/blog/מדריך-פרטיות-ai</guid>
+      <description><![CDATA[פעם הכלל היה "לא להעלות כלום לענן". היום, כשה-AI רץ בתוך המעבד של האייפון או המחשב הנייד שלכם, הכללים קצת יותר מורכבים. הנה מה שצריך לדעת.]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[המדריך ל-Canva AI: לעצב כמו מקצוען בלי לדעת לעצב]]></title>
+      <link>http://localhost:3000/blog/מדריך-קאנבה-ai-עיצוב-אוטומטי</link>
+      <guid>http://localhost:3000/blog/מדריך-קאנבה-ai-עיצוב-אוטומטי</guid>
+      <description><![CDATA[Canva היא כבר מזמן לא רק "עיצובים מוכנים". כלי ה-AI החדשים שלה (Magic Studio) מאפשרים לכם לעשות דברים שפעם דרשו פוטושופ ושעות של עבודה.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[להפוך דיבור לטקסט: הכלים הכי טובים לתמלול בעברית]]></title>
+      <link>http://localhost:3000/blog/hebrew-transcription-ai-tools</link>
+      <guid>http://localhost:3000/blog/hebrew-transcription-ai-tools</guid>
+      <description><![CDATA[סטודנטים, עיתונאים, עורכי דין ומזכירות - המאמר הזה יחסוך לכם שעות. בדקנו אילו כלי בינה מלאכותית יודעים להתמודד עם העברית המהירה והמבטאים שלנו.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[בוט לוואטסאפ עם AI: המדריך לכלים שישדרגו לכם את הצ\]]></title>
+      <link>http://localhost:3000/blog/ai-whatsapp-bots-israel</link>
+      <guid>http://localhost:3000/blog/ai-whatsapp-bots-israel</guid>
+      <description><![CDATA[הישראלים חיים בוואטסאפ. הנה הכלים שמאפשרים לכם להכניס את הבינה המלאכותית לשיחות: תמלול הודעות קוליות ארוכות, יצירת תמונות ושיחה עם GPT.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[איך לסכם הרצאה של שעה ב-2 דקות (בחינם)]]></title>
+      <link>http://localhost:3000/blog/סיכום-סרטוני-יוטיוב-ai</link>
+      <guid>http://localhost:3000/blog/סיכום-סרטוני-יוטיוב-ai</guid>
+      <description><![CDATA[העולם מלא בתוכן וידאו, אבל למי יש זמן לצפות בהכל? הכירו את הכלים ש"צופים" בסרטון בשבילכם ומוציאים את התובנות העיקריות.]]></description>
+      <pubDate>Sat, 28 Feb 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[עורך דין דיגיטלי: בדיקת חוזים עם AI (בזהירות!)]]></title>
+      <link>http://localhost:3000/blog/בדיקת-חוזה-שכירות-ai</link>
+      <guid>http://localhost:3000/blog/בדיקת-חוזה-שכירות-ai</guid>
+      <description><![CDATA[חוזים נועדו להיות קשים לקריאה. ה-AI יכול לקרוא 20 עמודים בשניה ולסמן לכם בדיוק איפה מנסים לסדר אתכם. כך תעשו את זה נכון.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[עיצוב לוגו ב-AI: איך ליצור מיתוג לעסק ב-0 שקלים]]></title>
+      <link>http://localhost:3000/blog/עיצוב-לוגו-לעסק-ai</link>
+      <guid>http://localhost:3000/blog/עיצוב-לוגו-לעסק-ai</guid>
+      <description><![CDATA[פתחתם עסק חדש? מזל טוב. לפני שאתם רצים להוציא הון על מיתוג, בואו לראות איך ה-AI יכול ליצור לכם לוגו שנראה מיליון דולר.]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[מדריך Midjourney v7: כבר לא צריך דיסקורד (המהפכה של 2026)]]></title>
+      <link>http://localhost:3000/blog/midjourney-v7-guide-2026</link>
+      <guid>http://localhost:3000/blog/midjourney-v7-guide-2026</guid>
+      <description><![CDATA[במשך שנים מידג\]]></description>
+      <pubDate>Sat, 31 Jan 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[האם שווה לשלם 80 ש"ח בחודש על ChatGPT Plus? (בדיקה כלכלית 2026)]]></title>
+      <link>http://localhost:3000/blog/האם-שווה-לשלם-על-chatgpt</link>
+      <guid>http://localhost:3000/blog/האם-שווה-לשלם-על-chatgpt</guid>
+      <description><![CDATA[הפער בין הגרסה החינמית לגרסה בתשלום גדל דרמטית השנה. האם מודל ה-Reasoning החדש והגישה ל-Sora מצדיקים את המחיר?]]></description>
+      <pubDate>Tue, 31 Mar 2026 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[עיצוב אתרים ב-AI: איך לבנות אתר וואו בלי מעצב]]></title>
+      <link>http://localhost:3000/blog/עיצוב-אתרים-ai-ui-ux</link>
+      <guid>http://localhost:3000/blog/עיצוב-אתרים-ai-ui-ux</guid>
+      <description><![CDATA[פעם, תהליך של עיצוב אתר לקח שבועות. אפיון, סקיצות, בחירת צבעים, פיגמה... היום? ה-AI בונה לכם את כל מבנה האתר (Sitemap), את הסקיצות (Wireframes) ואפילו את הקוד הסופי בתוך דקות. בואו נראה איך.]]></description>
+      <pubDate>Sun, 31 May 2026 21:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
