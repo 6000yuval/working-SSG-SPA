@@ -1,7 +1,6 @@
 import React from 'react';
 import { Article, Category, GlossaryTerm } from '../types';
 import { BookOpen, Zap, Brain, CheckCircle, Home, Briefcase, Layers, Shield, Star } from 'lucide-react';
-import { ALL_ARTICLES_BUNDLE } from './all_articles_monolith';
 
 export const CATEGORIES: Category[] = [
   { id: 'all', title: 'כל המאמרים', description: 'כל התכנים באתר במקום אחד', color: 'bg-slate-200', icon: <Layers className="w-5 h-5" /> },
@@ -29,4 +28,31 @@ export const GLOSSARY: GlossaryTerm[] = [
   { term: 'Alignment (יישור)', definition: 'תהליך התאמת מטרות המודל והתנהגותו לערכים ולכוונות של בני האדם.' },
 ];
 
-export const ARTICLES: Article[] = ALL_ARTICLES_BUNDLE;
+const articleModules = import.meta.glob('./articles/*.tsx', { eager: true }) as Record<string, Record<string, unknown>>;
+
+function isArticle(value: unknown): value is Article {
+  if (!value || typeof value !== 'object') return false;
+  const candidate = value as Record<string, unknown>;
+  return (
+    typeof candidate.id === 'string' &&
+    typeof candidate.slug === 'string' &&
+    typeof candidate.title === 'string' &&
+    typeof candidate.categoryId === 'string' &&
+    typeof candidate.description === 'string'
+  );
+}
+
+const discoveredArticles = Object.values(articleModules)
+  .flatMap((mod) => Object.values(mod))
+  .filter(isArticle);
+
+// Keep deterministic order and guard against accidental duplicate slugs.
+const seenSlugs = new Set<string>();
+export const ARTICLES: Article[] = discoveredArticles
+  .slice()
+  .sort((a, b) => a.id.localeCompare(b.id))
+  .filter((article) => {
+    if (seenSlugs.has(article.slug)) return false;
+    seenSlugs.add(article.slug);
+    return true;
+  });

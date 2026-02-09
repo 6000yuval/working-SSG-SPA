@@ -7,16 +7,27 @@ if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
 
 const siteUrl = process.env.SITE_URL || 'http://localhost:3000';
 
-const articlesSource = fs.readFileSync(path.join(root, 'data', 'all_articles_monolith.tsx'), 'utf8');
+const articlesDir = path.join(root, 'data', 'articles');
 const categoriesSource = fs.readFileSync(path.join(root, 'data', 'content.tsx'), 'utf8');
 
-const articleRegex = /\{\s*id:\s*'[^']*',[\s\S]*?slug:\s*'([^']+)'[\s\S]*?title:\s*'([^']+)'[\s\S]*?description:\s*'([^']+)'[\s\S]*?lastUpdated:\s*'([^']+)'/g;
-const articles = [];
-let articleMatch;
-while ((articleMatch = articleRegex.exec(articlesSource)) !== null) {
-  const [, slug, title, description, lastUpdated] = articleMatch;
-  articles.push({ slug, title, description, lastUpdated });
-}
+const extractField = (source, fieldName) => {
+  const regex = new RegExp(`${fieldName}\\s*:\\s*'((?:\\\\'|[^'])*)'`);
+  const match = source.match(regex);
+  return match ? match[1].replace(/\\'/g, "'") : '';
+};
+
+const articleFiles = fs.readdirSync(articlesDir).filter((file) => file.endsWith('.tsx'));
+const articles = articleFiles
+  .map((file) => {
+    const source = fs.readFileSync(path.join(articlesDir, file), 'utf8');
+    return {
+      slug: extractField(source, 'slug'),
+      title: extractField(source, 'title'),
+      description: extractField(source, 'description'),
+      lastUpdated: extractField(source, 'lastUpdated')
+    };
+  })
+  .filter((article) => article.slug);
 
 const categoryRegex = /\{\s*id:\s*'([^']+)'\s*,\s*title:/g;
 const categoryIds = [];

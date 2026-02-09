@@ -58,7 +58,7 @@ export const privacySafetyGuide: Article = {
     <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">איך מכבים את המעקב? (Opt-out)</h2>
     <p>
       ב-ChatGPT, ברירת המחדל היא שהם משתמשים בשיחות לאימון.
-      חובה להיכנס ל: <code>Settings > Data Controls</code> ולכבות את <strong>Improve the model for everyone</strong>.
+        חובה להיכנס ל: <code>Settings {'>'} Data Controls</code> ולכבות את <strong>Improve the model for everyone</strong>.
       ב-Claude וב-Gemini זה לרוב כבוי כברירת מחדל למשתמשים משלמים, אבל תמיד שווה לבדוק.
     </p>
 

@@ -17,7 +17,7 @@ export const excelFormulasAi: Article = {
     <div className="bg-green-50 p-8 rounded-2xl border-r-4 border-green-600 mb-10">
       <h3 className="text-2xl font-black text-green-900 mb-4">שינוי תפיסה 🧠</h3>
       <p className="text-lg text-green-800 leading-relaxed">
-        עד היום, כדי לעבוד באקסל הייתם צריכים "לחשוב כמו מחשב" (`=IF(A2>0,...)`).
+        עד היום, כדי לעבוד באקסל הייתם צריכים "לחשוב כמו מחשב" (<code>=IF(A2{'>'}0,...)</code>).
         מהיום, אתם יכולים "לחשוב כמו מנהל". אתם אומרים למחשב מה אתם רוצים ("תצבע באדום את כל מי שלא שילם"), והוא כותב את הנוסחה המורכבת עבורכם.
         המדריך הזה ייקח אתכם מהבסיס ועד לאוטומציה מלאה בעזרת קוד.
       </p>

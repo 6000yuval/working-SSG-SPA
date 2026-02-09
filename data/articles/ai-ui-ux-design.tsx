@@ -69,7 +69,7 @@ export const aiUiUxDesign: Article = {
     <div className="bg-green-50 p-6 rounded-xl border-t-4 border-green-500 my-8">
       <h3 className="font-bold text-green-900 mb-2">טיפ למקצוענים</h3>
       <p className="text-green-800">
-        השילוב המנצח הוא: <strong>Relume</strong> (למבנה) -> <strong>Figma</strong> (לדיוקים) -> <strong>v0</strong> (לקוד). ככה אתם מקבלים אתר שבנוי נכון, נראה טוב, והקוד שלו איכותי ומוכן לפיתוח.
+          השילוב המנצח הוא: <strong>Relume</strong> (למבנה) {'->'} <strong>Figma</strong> (לדיוקים) {'->'} <strong>v0</strong> (לקוד). ככה אתם מקבלים אתר שבנוי נכון, נראה טוב, והקוד שלו איכותי ומוכן לפיתוח.
       </p>
     </div>
   </PlainText>

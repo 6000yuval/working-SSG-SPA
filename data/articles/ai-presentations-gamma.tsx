@@ -24,7 +24,7 @@ export const aiPresentationsGamma: Article = {
     <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">איך זה עובד?</h2>
     <ol className="list-decimal list-inside space-y-4">
       <li>נרשמים ל-Gamma.app (יש גרסה חינמית נדיבה).</li>
-      <li>לוחצים על "Create New" -> "Generate".</li>
+      <li>לוחצים על "Create New" {'->'} "Generate".</li>
       <li>כותבים את הנושא: "מצגת משקיעים לסטארטאפ בתחום הקפה, שמגייס 2 מיליון דולר".</li>
       <li>הוא יציע לכם ראשי פרקים (Outline). אתם יכולים לערוך אותם או לאשר.</li>
       <li>בוחרים "Theme" (ערכת עיצוב) – כהה, צבעוני, רשמי וכו'.</li>

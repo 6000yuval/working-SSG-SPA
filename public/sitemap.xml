@@ -1,32 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>http://localhost:3000/</loc></url>
-  <url><loc>http://localhost:3000/blog/ביקורת-גוגל-גמיני-advanced</loc></url>
-  <url><loc>http://localhost:3000/blog/chatgpt-5-vs-claude-4-6-comparison</loc></url>
-  <url><loc>http://localhost:3000/blog/cursor-ai-coding-guide-2026-vibe-coding</loc></url>
-  <url><loc>http://localhost:3000/blog/קידום-אתרים-כתיבה-ai</loc></url>
-  <url><loc>http://localhost:3000/blog/what-is-vibe-coding</loc></url>
-  <url><loc>http://localhost:3000/blog/ai-video-generators-comparison-2026</loc></url>
-  <url><loc>http://localhost:3000/blog/jobs-disappearing-2030-future-work</loc></url>
-  <url><loc>http://localhost:3000/blog/is-ai-dangerous-safety-risks</loc></url>
-  <url><loc>http://localhost:3000/blog/save-time-with-ai-productivity</loc></url>
-  <url><loc>http://localhost:3000/blog/persona-prompt-engineering-guide</loc></url>
-  <url><loc>http://localhost:3000/blog/chain-of-thought-prompting</loc></url>
-  <url><loc>http://localhost:3000/blog/how-chatgpt-works-simple</loc></url>
   <url><loc>http://localhost:3000/blog/ai-automation-guide-business</loc></url>
-  <url><loc>http://localhost:3000/blog/תכנון-טיול-בחול-ai</loc></url>
-  <url><loc>http://localhost:3000/blog/יצירת-שירים-ai-suno</loc></url>
+  <url><loc>http://localhost:3000/blog/בוטים-שירות-לקוחות-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/ניתוח-נתונים-chatgpt-excel</loc></url>
+  <url><loc>http://localhost:3000/blog/ai-home-repair-diy-guide</loc></url>
+  <url><loc>http://localhost:3000/blog/ai-adhd-productivity-assistant</loc></url>
   <url><loc>http://localhost:3000/blog/בינה-מלאכותית-לסטודנטים-אקדמיה</loc></url>
-  <url><loc>http://localhost:3000/blog/מדריך-פרטיות-ai</loc></url>
-  <url><loc>http://localhost:3000/blog/מדריך-קאנבה-ai-עיצוב-אוטומטי</loc></url>
-  <url><loc>http://localhost:3000/blog/hebrew-transcription-ai-tools</loc></url>
-  <url><loc>http://localhost:3000/blog/ai-whatsapp-bots-israel</loc></url>
-  <url><loc>http://localhost:3000/blog/סיכום-סרטוני-יוטיוב-ai</loc></url>
-  <url><loc>http://localhost:3000/blog/בדיקת-חוזה-שכירות-ai</loc></url>
-  <url><loc>http://localhost:3000/blog/עיצוב-לוגו-לעסק-ai</loc></url>
-  <url><loc>http://localhost:3000/blog/midjourney-v7-guide-2026</loc></url>
-  <url><loc>http://localhost:3000/blog/האם-שווה-לשלם-על-chatgpt</loc></url>
+  <url><loc>http://localhost:3000/blog/בינה-מלאכותית-למורים</loc></url>
+  <url><loc>http://localhost:3000/blog/עיצוב-פנים-ai-חינם</loc></url>
+  <url><loc>http://localhost:3000/blog/השקעות-עם-בינה-מלאכותית</loc></url>
+  <url><loc>http://localhost:3000/blog/שיווק-בסושיאל-עם-בינה-מלאכותית</loc></url>
+  <url><loc>http://localhost:3000/blog/ai-medical-blood-test-analysis</loc></url>
+  <url><loc>http://localhost:3000/blog/ai-psychologist-mental-health-guide</loc></url>
+  <url><loc>http://localhost:3000/blog/יצירת-שירים-ai-suno</loc></url>
+  <url><loc>http://localhost:3000/blog/חידוש-תמונות-ישנות-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/מצגות-אוטומטיות-gamma</loc></url>
+  <url><loc>http://localhost:3000/blog/תמונת-פרופיל-לינקדאין-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/קידום-אתרים-כתיבה-ai</loc></url>
   <url><loc>http://localhost:3000/blog/עיצוב-אתרים-ai-ui-ux</loc></url>
+  <url><loc>http://localhost:3000/blog/ai-video-generators-comparison-2026</loc></url>
+  <url><loc>http://localhost:3000/blog/שיבוט-קול-ai-voice-cloning</loc></url>
+  <url><loc>http://localhost:3000/blog/ai-whatsapp-bots-israel</loc></url>
+  <url><loc>http://localhost:3000/blog/דירוג-כלי-פיתוח-ai-2026</loc></url>
+  <url><loc>http://localhost:3000/blog/מדריך-v0-בניית-אתרים</loc></url>
+  <url><loc>http://localhost:3000/blog/מדריך-קאנבה-ai-עיצוב-אוטומטי</loc></url>
+  <url><loc>http://localhost:3000/blog/chain-of-thought-prompting</loc></url>
+  <url><loc>http://localhost:3000/blog/chatgpt-5-vs-claude-4-6-comparison</loc></url>
+  <url><loc>http://localhost:3000/blog/תיקון-קוד-באגים-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/בדיקת-חוזה-שכירות-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/cursor-ai-coding-guide-2026-vibe-coding</loc></url>
+  <url><loc>http://localhost:3000/blog/cursor-נגד-windsurf-השוואה</loc></url>
+  <url><loc>http://localhost:3000/blog/מדריך-בניית-gpt-אישי</loc></url>
+  <url><loc>http://localhost:3000/blog/נוסחאות-אקסל-chatgpt</loc></url>
+  <url><loc>http://localhost:3000/blog/תוכנית-אימון-אישית-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/מתכונים-שאריות-מקרר-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/ביקורת-גוגל-גמיני-advanced</loc></url>
+  <url><loc>http://localhost:3000/blog/רעיונות-למתנות-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/הקראת-טקסט-בעברית-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/how-chatgpt-works-simple</loc></url>
+  <url><loc>http://localhost:3000/blog/is-ai-dangerous-safety-risks</loc></url>
+  <url><loc>http://localhost:3000/blog/האם-שווה-לשלם-על-chatgpt</loc></url>
+  <url><loc>http://localhost:3000/blog/הכנה-לראיון-עבודה-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/jobs-disappearing-2030-future-work</loc></url>
+  <url><loc>http://localhost:3000/blog/סיפורי-ילדים-מותאמים-אישית</loc></url>
+  <url><loc>http://localhost:3000/blog/לימוד-שפות-שיחה-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/עיצוב-לוגו-לעסק-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/how-to-make-money-with-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/midjourney-v7-guide-2026</loc></url>
+  <url><loc>http://localhost:3000/blog/no-code-נגד-ai-code</loc></url>
+  <url><loc>http://localhost:3000/blog/מדריך-perplexity-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/persona-prompt-engineering-guide</loc></url>
+  <url><loc>http://localhost:3000/blog/מדריך-פרטיות-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/שיפור-אנגלית-מיילים-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/save-time-with-ai-productivity</loc></url>
+  <url><loc>http://localhost:3000/blog/hebrew-transcription-ai-tools</loc></url>
+  <url><loc>http://localhost:3000/blog/תכנון-טיול-בחול-ai</loc></url>
+  <url><loc>http://localhost:3000/blog/what-is-vibe-coding</loc></url>
+  <url><loc>http://localhost:3000/blog/סיכום-סרטוני-יוטיוב-ai</loc></url>
   <url><loc>http://localhost:3000/category/basics</loc></url>
   <url><loc>http://localhost:3000/category/skills</loc></url>
   <url><loc>http://localhost:3000/category/thinking</loc></url>

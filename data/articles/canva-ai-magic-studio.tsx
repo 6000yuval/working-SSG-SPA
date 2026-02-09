@@ -40,7 +40,7 @@ export const canvaAiMagicStudio: Article = {
     <p>
       <strong>איך עושים את זה:</strong>
       <br/>
-      לוחצים על התמונה > Edit Photo > בוחרים בכלי <strong>Magic Eraser</strong>.
+        לוחצים על התמונה {'>'} Edit Photo {'>'} בוחרים בכלי <strong>Magic Eraser</strong>.
       עכשיו פשוט "צובעים" עם המברשת את מה שרוצים להעלים. משחררים את העכבר, ו... פוף. קאנבה לא רק מוחקת, היא משלימה את הרקע כאילו החפץ מעולם לא היה שם. זה עובד ב-90% מהמקרים בצורה מושלמת.
     </p>
 
