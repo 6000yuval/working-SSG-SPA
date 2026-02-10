@@ -144,6 +144,7 @@ function App() {
                        article={article} 
                        category={CATEGORIES.find(c => c.id === article.categoryId) || CATEGORIES[0]}
                        onClick={handleArticleClick}
+                       priority={article.id === filteredArticles[0]?.id}
                      />
                    ))}
                  </div>

@@ -1,6 +1,13 @@
 import { usePageContext } from 'vike-react/usePageContext';
 import { allCategories, getArticlesByCategory } from '../../../lib/content';
 
+function unsplashUrl(baseUrl: string, width: number, quality = 70) {
+  if (!baseUrl.includes('images.unsplash.com')) return baseUrl;
+  return baseUrl
+    .replace(/([?&])w=\d+/g, '$1w=' + width)
+    .replace(/([?&])q=\d+/g, '$1q=' + quality);
+}
+
 export default function Page() {
   const pageContext = usePageContext();
   const { categoryId } = pageContext.routeParams;
@@ -33,7 +40,15 @@ export default function Page() {
         {posts.map((post) => (
           <article key={post.id} className="bg-white border border-slate-200 rounded-xl overflow-hidden">
             <a href={`/blog/${post.slug || post.id}`}>
-              <img src={post.imageUrl} alt={post.title} className="w-full h-44 object-cover" />
+              <img
+                src={unsplashUrl(post.imageUrl, 700, 70)}
+                srcSet={`${unsplashUrl(post.imageUrl, 480, 65)} 480w, ${unsplashUrl(post.imageUrl, 700, 70)} 700w, ${unsplashUrl(post.imageUrl, 1000, 75)} 1000w`}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                alt={post.title}
+                className="w-full h-44 object-cover"
+                loading="lazy"
+                decoding="async"
+              />
             </a>
             <div className="p-4">
               <h2 className="text-xl font-bold mb-2">

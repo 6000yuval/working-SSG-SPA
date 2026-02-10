@@ -6,9 +6,20 @@ interface ArticleCardProps {
   article: Article;
   category: Category;
   onClick: (id: string) => void;
+  priority?: boolean;
 }
 
-export const ArticleCard: React.FC<ArticleCardProps> = ({ article, category, onClick }) => {
+function unsplashUrl(baseUrl: string, width: number, quality = 70) {
+  if (!baseUrl.includes('images.unsplash.com')) return baseUrl;
+  return baseUrl
+    .replace(/([?&])w=\d+/g, '$1w=' + width)
+    .replace(/([?&])q=\d+/g, '$1q=' + quality);
+}
+
+export const ArticleCard: React.FC<ArticleCardProps> = ({ article, category, onClick, priority = false }) => {
+  const src = unsplashUrl(article.imageUrl, 700, 70);
+  const srcSet = `${unsplashUrl(article.imageUrl, 480, 65)} 480w, ${unsplashUrl(article.imageUrl, 700, 70)} 700w, ${unsplashUrl(article.imageUrl, 1000, 75)} 1000w`;
+
   return (
     <div 
       className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col h-full cursor-pointer transform hover:-translate-y-1"
@@ -20,9 +31,14 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, category, onC
           <span>{category.title}</span>
         </div>
         <img 
-          src={article.imageUrl} 
+          src={src}
+          srcSet={srcSet}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           alt={article.title} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading={priority ? 'eager' : 'lazy'}
+          decoding="async"
+          fetchPriority={priority ? 'high' : 'low'}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
