@@ -1,13 +1,6 @@
 import { usePageContext } from 'vike-react/usePageContext';
 import { allCategories, getArticleBySlug, getRelatedArticles } from '../../../lib/content';
 
-function unsplashUrl(baseUrl: string, width: number, quality = 72) {
-  if (!baseUrl.includes('images.unsplash.com')) return baseUrl;
-  return baseUrl
-    .replace(/([?&])w=\d+/g, '$1w=' + width)
-    .replace(/([?&])q=\d+/g, '$1q=' + quality);
-}
-
 export default function Page() {
   const pageContext = usePageContext();
   const slug = pageContext.routeParams.slug;
@@ -26,8 +19,6 @@ export default function Page() {
 
   const category = allCategories.find((c) => c.id === article.categoryId);
   const related = getRelatedArticles(article.id, article.categoryId, 3);
-  const heroSrc = unsplashUrl(article.imageUrl, 1280, 74);
-  const heroSrcSet = `${unsplashUrl(article.imageUrl, 640, 68)} 640w, ${unsplashUrl(article.imageUrl, 960, 72)} 960w, ${unsplashUrl(article.imageUrl, 1280, 74)} 1280w`;
 
   return (
     <main className="container mx-auto px-4 py-10 max-w-4xl">
@@ -38,16 +29,7 @@ export default function Page() {
       </nav>
 
       <article>
-        <img
-          src={heroSrc}
-          srcSet={heroSrcSet}
-          sizes="(max-width: 1024px) 100vw, 1024px"
-          alt={article.title}
-          className="w-full rounded-xl mb-6 max-h-[420px] object-cover"
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
-        />
+        <img src={article.imageUrl} alt={article.title} className="w-full rounded-xl mb-6 max-h-[420px] object-cover" />
         <h1 className="text-4xl font-black mb-4">{article.title}</h1>
         <p className="text-slate-600 mb-8">{article.description}</p>
 
