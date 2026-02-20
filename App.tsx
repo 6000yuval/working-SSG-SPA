@@ -29,8 +29,10 @@ function App() {
 
   // Handlers
   const handleArticleClick = (id: string) => {
-    setSelectedArticleId(id);
-    setView('article');
+    const article = ARTICLES.find((a) => a.id === id);
+    if (!article) return;
+    const slugOrId = article.slug || article.id;
+    window.location.href = `/blog/${slugOrId}`;
   };
 
   const handleBack = () => {
