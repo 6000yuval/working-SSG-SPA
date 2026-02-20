@@ -7,6 +7,10 @@ export function getArticleBySlug(slug: string) {
   return ARTICLES.find((article) => article.slug === slug);
 }
 
+export function getCategoryById(categoryId: string) {
+  return CATEGORIES.find((category) => category.id === categoryId);
+}
+
 export function getRelatedArticles(articleId: string, categoryId: string, limit = 3) {
   return ARTICLES.filter((article) => article.id !== articleId && article.categoryId === categoryId).slice(0, limit);
 }

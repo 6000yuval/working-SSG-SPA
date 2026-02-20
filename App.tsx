@@ -59,7 +59,7 @@ function App() {
               <Brain className="w-6 h-6" />
             </div>
             <span className="text-xl font-black tracking-tight text-slate-800">
-              AI<span className="text-blue-600">Edu</span>Blog
+              AI<span className="text-blue-600"> בעברית</span>
             </span>
           </div>
 
@@ -180,12 +180,13 @@ function App() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} AI EduBlog. כל הזכויות שמורות. נבנה באמצעות React & Tailwind.
+              © {new Date().getFullYear()} AI בעברית. כל הזכויות שמורות. נבנה באמצעות React & Tailwind.
             </div>
             <div className="flex gap-6">
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors text-sm font-bold">אודות</a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors text-sm font-bold">מדיניות פרטיות</a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors text-sm font-bold">צור קשר</a>
+              <a href="/about" className="text-slate-400 hover:text-blue-600 transition-colors text-sm font-bold">אודות</a>
+              <a href="/privacy" className="text-slate-400 hover:text-blue-600 transition-colors text-sm font-bold">מדיניות פרטיות</a>
+              <a href="/contact" className="text-slate-400 hover:text-blue-600 transition-colors text-sm font-bold">צור קשר</a>
+              <a href="/editorial-policy" className="text-slate-400 hover:text-blue-600 transition-colors text-sm font-bold">מדיניות עריכה</a>
             </div>
           </div>
         </div>

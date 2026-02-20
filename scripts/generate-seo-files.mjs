@@ -5,7 +5,7 @@ const root = process.cwd();
 const publicDir = path.join(root, 'public');
 if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
 
-const siteUrl = process.env.SITE_URL || 'http://localhost:3000';
+const siteUrl = (process.env.SITE_URL || 'https://aibehivrit.vercel.app').replace(/\/$/, '');
 
 const articlesDir = path.join(root, 'data', 'articles');
 const categoriesSource = fs.readFileSync(path.join(root, 'data', 'content.tsx'), 'utf8');
@@ -16,6 +16,17 @@ const extractField = (source, fieldName) => {
   return match ? match[1].replace(/\\'/g, "'") : '';
 };
 
+const toAbsoluteUrl = (pathname) => new URL(pathname, `${siteUrl}/`).toString();
+
+const parseLastUpdated = (lastUpdated) => {
+  if (!lastUpdated) return null;
+  const [monthRaw, yearRaw] = lastUpdated.split('/');
+  const month = Number(monthRaw);
+  const year = Number(yearRaw);
+  if (!Number.isFinite(month) || !Number.isFinite(year) || month < 1 || month > 12) return null;
+  return new Date(Date.UTC(year, month - 1, 1));
+};
+
 const articleFiles = fs.readdirSync(articlesDir).filter((file) => file.endsWith('.tsx'));
 const articles = articleFiles
   .map((file) => {
@@ -24,7 +35,8 @@ const articles = articleFiles
       slug: extractField(source, 'slug'),
       title: extractField(source, 'title'),
       description: extractField(source, 'description'),
-      lastUpdated: extractField(source, 'lastUpdated')
+      lastUpdated: extractField(source, 'lastUpdated'),
+      imageUrl: extractField(source, 'imageUrl')
     };
   })
   .filter((article) => article.slug);
@@ -36,27 +48,32 @@ while ((categoryMatch = categoryRegex.exec(categoriesSource)) !== null) {
   if (categoryMatch[1] !== 'all') categoryIds.push(categoryMatch[1]);
 }
 
-const urls = [
-  '/',
-  ...articles.map((a) => `/blog/${a.slug}`),
-  ...categoryIds.map((id) => `/category/${id}`)
+const staticPages = ['/', '/about', '/privacy', '/contact', '/editorial-policy'];
+const staticUrls = [...staticPages, ...categoryIds.map((id) => `/category/${id}`)];
+
+const sitemapEntries = [
+  ...staticUrls.map((u) => `  <url>\n    <loc>${toAbsoluteUrl(u)}</loc>\n  </url>`),
+  ...articles.map((a) => {
+    const lastmodDate = parseLastUpdated(a.lastUpdated);
+    const lastmod = lastmodDate ? `\n    <lastmod>${lastmodDate.toISOString().slice(0, 10)}</lastmod>` : '';
+    return `  <url>\n    <loc>${toAbsoluteUrl(`/blog/${a.slug}`)}</loc>${lastmod}\n  </url>`;
+  })
 ];
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-  .map((u) => `  <url><loc>${siteUrl}${u}</loc></url>`)
-  .join('\n')}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.join('\n')}\n</urlset>\n`;
 
-const robots = `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`;
+const robots = `User-agent: *\nAllow: /\n\nHost: ${siteUrl.replace(/^https?:\/\//, '')}\nSitemap: ${siteUrl}/sitemap.xml\n`;
 
 const rssItems = articles
   .map((a) => {
-    const [month, year] = a.lastUpdated.split('/');
-    const pubDate = new Date(Number(year), Number(month) - 1, 1).toUTCString();
-    return `    <item>\n      <title><![CDATA[${a.title}]]></title>\n      <link>${siteUrl}/blog/${a.slug}</link>\n      <guid>${siteUrl}/blog/${a.slug}</guid>\n      <description><![CDATA[${a.description}]]></description>\n      <pubDate>${pubDate}</pubDate>\n    </item>`;
+    const dt = parseLastUpdated(a.lastUpdated) || new Date();
+    const articleUrl = toAbsoluteUrl(`/blog/${a.slug}`);
+    const imageTag = a.imageUrl ? `\n      <enclosure url="${a.imageUrl}" type="image/jpeg" />` : '';
+    return `    <item>\n      <title><![CDATA[${a.title}]]></title>\n      <link>${articleUrl}</link>\n      <guid isPermaLink="true">${articleUrl}</guid>\n      <description><![CDATA[${a.description}]]></description>\n      <pubDate>${dt.toUTCString()}</pubDate>${imageTag}\n    </item>`;
   })
   .join('\n');
 
-const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n  <channel>\n    <title>AI EduBlog IL</title>\n    <link>${siteUrl}</link>\n    <description>מדריכים ותובנות על בינה מלאכותית</description>\n${rssItems}\n  </channel>\n</rss>\n`;
+const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n  <channel>\n    <title>AI בעברית</title>\n    <link>${siteUrl}</link>\n    <description>מדריכים ותובנות על בינה מלאכותית</description>\n    <language>he-il</language>\n    <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml" />\n${rssItems}\n  </channel>\n</rss>\n`;
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
 fs.writeFileSync(path.join(publicDir, 'robots.txt'), robots, 'utf8');

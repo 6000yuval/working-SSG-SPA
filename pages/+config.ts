@@ -1,11 +1,12 @@
 import vikeReact from 'vike-react/config';
+import { SITE_LANG } from '../lib/site';
 
 export default {
   extends: vikeReact,
   prerender: true,
-  title: 'AI EduBlog | המדריך לבינה מלאכותית',
+  title: 'AI בעברית | המדריך לבינה מלאכותית',
   description: 'אוסף מאמרים מעמיקים, מדריכים מעשיים ותובנות על בינה מלאכותית.',
-  lang: 'he',
+  lang: SITE_LANG,
   headHtmlBegin: `
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">

@@ -22,7 +22,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, category, onB
     }
 
     return () => {
-      document.title = 'AI EduBlog | המדריך לבינה מלאכותית';
+      document.title = 'AI בעברית | המדריך לבינה מלאכותית';
     };
   }, [article]);
 
@@ -87,7 +87,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, category, onB
     },
     "publisher": {
       "@type": "Organization",
-      "name": "AI EduBlog IL",
+      "name": "AI בעברית",
       "logo": {
         "@type": "ImageObject",
         "url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex" 
